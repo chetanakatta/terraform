@@ -1,0 +1,1 @@
+instance_type = "t3.small" #overrides the default values in variable
