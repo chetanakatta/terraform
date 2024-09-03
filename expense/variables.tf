@@ -1,3 +1,4 @@
+#ec2 variables
 variable "instance_names" {
     type = list
     default = ["db","backend","frontend"]
@@ -19,6 +20,7 @@ variable "common_tags" {
     }
 }
 
+#sg variables
 variable "sg_name" {
     default = "allow_ssh"
 }
@@ -35,4 +37,12 @@ variable "protocol" {
 variable "allowed_cidr" {
     type = list(string)
     default = ["0.0.0.0/0"] 
+}
+
+#r53 variables
+variable "zone_id" {
+    default = "Z020156726KEQOBA2RA7Q"  #expense.fun hosted zone id
+}
+variable "domain_name" {
+    default = "expense.fun"
 }
