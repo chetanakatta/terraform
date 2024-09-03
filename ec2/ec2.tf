@@ -22,7 +22,7 @@ resource "aws_security_group" "allow_ssh" {
         cidr_blocks      = ["0.0.0.0/0"]
     }
 
-    egress {
+    egress {        #outbound
         from_port        = 0 # from 0 to 0 means, opening all protocols
         to_port          = 0
         protocol         = "-1" # -1 all protocols
