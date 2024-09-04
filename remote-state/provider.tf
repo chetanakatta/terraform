@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "chetanakatta"
-    key = "remote-state-demo"
+    bucket = "chetanakatta"  #give s3 bucket name
+    key = "remote-state-demo" #any name -->should be different for diff provider
     region = "us-east-1"
-    dynamodb_table = "daws-78s-locking"
+    dynamodb_table = "daws-78s-locking"  #dynamodb name
   }
 }
 
