@@ -1,3 +1,5 @@
+#quering ami_id using data-source
+
 resource "aws_instance" "db" {
 
     ami = data.aws_ami.ami_info.id

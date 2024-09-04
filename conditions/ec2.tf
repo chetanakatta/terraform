@@ -1,3 +1,5 @@
+#if db instance type should be t3.small otherwise t3.micro??by using conditions we can achieve
+
 resource "aws_instance" "db" {
 
     ami = var.image_id   #var.variable.id --> declaring variable

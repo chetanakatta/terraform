@@ -1,3 +1,5 @@
+#count loop used for list. by using count creating 3 ec2
+
 resource "aws_instance" "db" {
     count = length(var.instance_name)  #length uses the no in default var to create no of instance
     #count = 3 to create 3 instances

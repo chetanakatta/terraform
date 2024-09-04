@@ -1,3 +1,4 @@
+#creating 3 ec2, sg and r53 records
 resource "aws_instance" "expense" {
     ami = var.image_id   
     count = length(var.instance_names)

@@ -1,3 +1,5 @@
+#creating ec2 and sg 
+
 # resource <resource-type> <resource-name>
 resource "aws_instance" "db" {
 
